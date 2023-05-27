@@ -1,0 +1,358 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>AdminLTE 3 | Dashboard 3</title>
+
+    <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback"
+          rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link href="{% static 'assets2/css/all.min.css' %}" rel="stylesheet">
+    <!-- IonIcons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/onsen/2.10.10/css/ionicons/css/ionicons.min.css"
+          rel="stylesheet">
+    <!-- Theme style -->
+    <link href="{% static 'assets2/css/adminlte.min.css' %}" rel="stylesheet">
+</head>
+<!--
+`body` tag options:
+
+  Apply one or more of the following classes to to the body tag
+  to get the desired effect
+
+  * sidebar-collapse
+  * sidebar-mini
+-->
+
+<body class="hold-transition sidebar-mini">
+<!-- Site wrapper -->
+<div class="wrapper">
+    <!-- Navbar -->
+    <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+        <!-- Left navbar links -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+            </li>
+
+        </ul>
+
+        <!-- Right navbar links -->
+        <ul class="navbar-nav ml-auto">
+            <!-- Navbar Search -->
+            <li class="nav-item">
+                <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+                    <i class="fas fa-search"></i>
+                </a>
+                <div class="navbar-search-block">
+                    <form class="form-inline">
+                        <div class="input-group input-group-sm">
+                            <input aria-label="Search" class="form-control form-control-navbar" placeholder="Search"
+                                   type="search">
+                            <div class="input-group-append">
+                                <button class="btn btn-navbar" type="submit">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                                <button class="btn btn-navbar" data-widget="navbar-search" type="button">
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </li>
+
+            <!-- Messages Dropdown Menu -->
+            <li class="nav-item dropdown">
+                <a class="nav-link" data-toggle="dropdown" href="#">
+                    <i class="far fa-comments"></i>
+                    <span class="badge badge-danger navbar-badge">3</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                    <a class="dropdown-item" href="#">
+                        <!-- Message Start -->
+                        <div class="media">
+                            <img alt="User Avatar" class="img-size-50 mr-3 img-circle"
+                                 src="{% static 'assets2/dist/img/user1-128x128.jpg' %}">
+                            <div class="media-body">
+                                <h3 class="dropdown-item-title">
+                                    Brad Diesel
+                                    <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
+                                </h3>
+                                <p class="text-sm">Call me whenever you can...</p>
+                                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                            </div>
+                        </div>
+                        <!-- Message End -->
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">
+                        <!-- Message Start -->
+                        <div class="media">
+                            <img alt="User Avatar" class="img-size-50 img-circle mr-3"
+                                 src="{% static 'assets2/dist/img/user8-128x128.jpg' %}">
+                            <div class="media-body">
+                                <h3 class="dropdown-item-title">
+                                    John Pierce
+                                    <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
+                                </h3>
+                                <p class="text-sm">I got your message bro</p>
+                                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                            </div>
+                        </div>
+                        <!-- Message End -->
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">
+                        <!-- Message Start -->
+                        <div class="media">
+                            <img alt="User Avatar" class="img-size-50 img-circle mr-3"
+                                 src="{% static 'assets2/dist/img/user3-128x128.jpg' %}">
+                            <div class="media-body">
+                                <h3 class="dropdown-item-title">
+                                    Nora Silvester
+                                    <span class="float-right text-sm text-warning"><i class="fas fa-star"></i></span>
+                                </h3>
+                                <p class="text-sm">The subject goes here</p>
+                                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                            </div>
+                        </div>
+                        <!-- Message End -->
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item dropdown-footer" href="#">See All Messages</a>
+                </div>
+            </li>
+            <!-- Notifications Dropdown Menu -->
+            <li class="nav-item dropdown">
+                <a class="nav-link" data-toggle="dropdown" href="#">
+                    <i class="far fa-bell"></i>
+                    <span class="badge badge-warning navbar-badge">15</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                    <span class="dropdown-item dropdown-header">15 Notifications</span>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">
+                        <i class="fas fa-envelope mr-2"></i> 4 new messages
+                        <span class="float-right text-muted text-sm">3 mins</span>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">
+                        <i class="fas fa-users mr-2"></i> 8 friend requests
+                        <span class="float-right text-muted text-sm">12 hours</span>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">
+                        <i class="fas fa-file mr-2"></i> 3 new reports
+                        <span class="float-right text-muted text-sm">2 days</span>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item dropdown-footer" href="#">See All Notifications</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <!-- /.navbar -->
+
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar sidebar-dark-primary elevation-4">
+        <!-- Brand Logo -->
+        <a class="brand-link" href="#">
+            <img alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+                 src="{% static 'assets2/img/logo.png' %}" style="opacity: .8">
+            <span class="brand-text font-weight-light">FALCO</span>
+        </a>
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <!-- Sidebar user (optional) -->
+            <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                <div class="image">
+                    <img alt="User Image" class="img-circle elevation-2"
+                         src="{% static 'assets2/dist/img/user2-160x160.jpg' %}">
+                </div>
+                <div class="info">
+                    <a class="d-block" href="#">Alexander Pierce</a>
+                </div>
+            </div>
+
+            <nav class="mt-2">
+                <ul class="nav nav-pills nav-sidebar flex-column" data-accordion="false" data-widget="treeview"
+                    role="menu">
+                    <!-- Add icons to the links using the .nav-icon class
+                         with font-awesome or any other icon font library -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="../widgets.html">
+                            <i class="nav-icon fas fa-th"></i>
+                            <p>
+                                Tableau de bord
+                            </p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../widgets.html">
+                            <i class="nav-icon fas fa-th"></i>
+                            <p>
+                                Classes
+                            </p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../widgets.html">
+                            <i class="nav-icon fas fa-th"></i>
+                            <p>
+                                Eleves
+                            </p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../widgets.html">
+                            <i class="nav-icon fas fa-th"></i>
+                            <p>
+                                Messages
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- /.sidebar-menu -->
+        </div>
+        <!-- /.sidebar -->
+    </aside>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+            <div class="container-fluid">
+                <div class="row mb-2">
+                    <div class="col-sm-6">
+                        <h1>Classes</h1>
+                    </div>
+                    <div class="col-sm-6">
+                        <ol class="breadcrumb float-sm-right">
+                            <li class="breadcrumb-item"><a href="#">Accueil</a></li>
+                            <li class="breadcrumb-item active">Classes</li>
+                        </ol>
+                    </div>
+                </div>
+            </div><!-- /.container-fluid -->
+        </section>
+
+
+        <section class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-6 offset-3">
+                        <div class="d-grid gap-2 col-6 mx-auto">
+                            <svg fill="none" height="223" viewBox="0 0 306 223" width="306"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M203.549 14.1602C127.532 -17.1927 36.3585 36.7096 15.2554 81.1707C-35.4184 187.932 53.136 237.203 92.0924 219.181C108.355 211.657 121.64 198.809 134.479 186.309C153.756 167.7 179.298 156.976 206.082 156.246C226.71 155.772 247.239 161.307 267.807 159.681C288.376 158.056 306.545 129.689 305.987 109.063C305.137 77.5826 285.065 47.7797 203.549 14.1602Z"
+                                      fill="#F75D5D" opacity="0.1"/>
+                                <path d="M255.892 11.3625H50.1087C43.2848 11.3625 37.7529 16.8944 37.7529 23.7183V185.658C37.7529 192.481 43.2848 198.013 50.1087 198.013H255.892C262.716 198.013 268.247 192.481 268.247 185.658V23.7183C268.247 16.8944 262.716 11.3625 255.892 11.3625Z"
+                                      fill="white"/>
+                                <path d="M255.897 198.405H50.1134C46.7348 198.402 43.4956 197.058 41.1066 194.669C38.7176 192.279 37.3739 189.04 37.3701 185.662V23.7229C37.3739 20.3443 38.7176 17.1051 41.1066 14.716C43.4956 12.327 46.7348 10.9831 50.1134 10.9792H255.897C259.275 10.9831 262.514 12.327 264.903 14.716C267.292 17.1051 268.636 20.3443 268.64 23.7229V185.662C268.636 189.04 267.292 192.279 264.903 194.669C262.514 197.058 259.275 198.402 255.897 198.405ZM50.1134 11.7546C46.9403 11.7582 43.8983 13.0204 41.6547 15.2641C39.411 17.5078 38.149 20.5498 38.1455 23.7229V185.662C38.149 188.835 39.411 191.877 41.6547 194.121C43.8983 196.364 46.9403 197.626 50.1134 197.63H255.897C259.07 197.626 262.112 196.364 264.355 194.121C266.599 191.877 267.861 188.835 267.864 185.662V23.7229C267.861 20.5498 266.599 17.5078 264.355 15.2641C262.112 13.0204 259.07 11.7582 255.897 11.7546H50.1134Z"
+                                      fill="#292A2E"/>
+                                <path d="M268.248 23.7193V47.1489H37.7544V23.7193C37.754 22.0963 38.0733 20.4892 38.6941 18.9897C39.3149 17.4902 40.2251 16.1278 41.3726 14.9801C42.5202 13.8325 43.8826 12.9222 45.382 12.3012C46.8814 11.6802 48.4885 11.3607 50.1114 11.361H255.893C259.17 11.3616 262.313 12.6639 264.63 14.9815C266.947 17.2991 268.248 20.4421 268.248 23.7193Z"
+                                      fill="#0077FF"/>
+                                <path d="M268.66 47.5651H37.3345V23.7193C37.3377 20.3326 38.6843 17.0854 41.079 14.6905C43.4736 12.2956 46.7206 10.9485 50.1073 10.9448H255.889C259.275 10.949 262.522 12.2963 264.916 14.6912C267.31 17.0861 268.657 20.3329 268.66 23.7193V47.5651ZM38.1677 46.7327H267.828V23.7193C267.825 20.5536 266.566 17.5185 264.328 15.2797C262.089 13.0409 259.055 11.7813 255.889 11.7772H50.1073C46.9413 11.7808 43.906 13.0401 41.6674 15.279C39.4289 17.5178 38.17 20.5533 38.1669 23.7193L38.1677 46.7327Z"
+                                      fill="#367CFF"/>
+                                <path d="M97.6265 23.5002V6.2041C97.6265 3.02006 95.0453 0.438873 91.8612 0.438873C88.6772 0.438873 86.096 3.02006 86.096 6.2041V23.5002C86.096 26.6842 88.6772 29.2654 91.8612 29.2654C95.0453 29.2654 97.6265 26.6842 97.6265 23.5002Z"
+                                      fill="white"/>
+                                <path d="M91.8528 29.6525C90.2218 29.6503 88.6581 29.0013 87.505 27.8478C86.3518 26.6943 85.7031 25.1305 85.7014 23.4994V6.20373C85.6947 5.39146 85.8489 4.5859 86.1551 3.83353C86.4614 3.08117 86.9135 2.39687 87.4855 1.82014C88.0575 1.2434 88.7381 0.785627 89.4879 0.473232C90.2377 0.160837 91.042 0 91.8543 0C92.6666 0 93.4709 0.160837 94.2207 0.473232C94.9705 0.785627 95.6511 1.2434 96.2231 1.82014C96.7951 2.39687 97.2472 3.08117 97.5535 3.83353C97.8597 4.5859 98.0139 5.39146 98.0072 6.20373V23.4994C98.0055 25.131 97.3564 26.6952 96.2026 27.8488C95.0488 29.0024 93.4844 29.6511 91.8528 29.6525ZM91.8528 0.825989C90.427 0.827531 89.0601 1.39461 88.0519 2.4028C87.0437 3.41098 86.4766 4.77794 86.4751 6.20373V23.4994C86.4689 24.2096 86.6033 24.9139 86.8708 25.5719C87.1382 26.2298 87.5333 26.8282 88.0333 27.3326C88.5333 27.837 89.1282 28.2373 89.7837 28.5105C90.4393 28.7838 91.1424 28.9244 91.8526 28.9244C92.5628 28.9244 93.266 28.7838 93.9215 28.5105C94.5771 28.2373 95.172 27.837 95.672 27.3326C96.1719 26.8282 96.567 26.2298 96.8345 25.5719C97.1019 24.9139 97.2364 24.2096 97.2302 23.4994V6.20373C97.2286 4.77801 96.6616 3.41112 95.6535 2.40294C94.6454 1.39477 93.2786 0.827641 91.8528 0.825989Z"
+                                      fill="#262626"/>
+                                <path d="M219.906 23.5002V6.20412C219.906 3.02008 217.325 0.438889 214.141 0.438889C210.957 0.438889 208.376 3.02008 208.376 6.20412V23.5002C208.376 26.6843 210.957 29.2654 214.141 29.2654C217.325 29.2654 219.906 26.6843 219.906 23.5002Z"
+                                      fill="white"/>
+                                <path d="M214.148 29.6523C212.517 29.6505 210.953 29.0017 209.799 27.8481C208.646 26.6946 207.997 25.1305 207.995 23.4992V6.2035C207.995 4.57159 208.643 3.00651 209.797 1.85258C210.951 0.698643 212.516 0.0503693 214.148 0.0503693C215.78 0.0503693 217.345 0.698643 218.499 1.85258C219.653 3.00651 220.301 4.57159 220.301 6.2035V23.4992C220.3 25.1305 219.651 26.6946 218.497 27.8481C217.344 29.0017 215.78 29.6505 214.148 29.6523ZM214.148 0.825753C212.723 0.827736 211.356 1.39501 210.348 2.40315C209.341 3.41129 208.774 4.77799 208.772 6.2035V23.4992C208.772 24.9254 209.339 26.2933 210.347 27.3018C211.356 28.3103 212.724 28.8769 214.15 28.8769C215.576 28.8769 216.944 28.3103 217.953 27.3018C218.961 26.2933 219.528 24.9254 219.528 23.4992V6.2035C219.526 4.77741 218.959 3.41021 217.95 2.40197C216.942 1.39374 215.574 0.826855 214.148 0.825753Z"
+                                      fill="#262626"/>
+                                <g opacity="0.08">
+                                    <path d="M82.2043 63.7281H49.021V96.3438H82.2043V63.7281Z" fill="#F75D5D"/>
+                                    <path d="M82.2043 105.413H49.021V138.029H82.2043V105.413Z" fill="#F75D5D"/>
+                                    <path d="M82.2043 147.098H49.021V179.714H82.2043V147.098Z" fill="#F75D5D"/>
+                                    <path d="M125.895 63.7283H92.7119V96.3439H125.895V63.7283Z" fill="#F75D5D"/>
+                                    <path d="M125.895 105.413H92.7119V138.029H125.895V105.413Z" fill="#F75D5D"/>
+                                    <path d="M169.143 63.7282H135.96V96.3439H169.143V63.7282Z" fill="#F75D5D"/>
+                                    <path d="M169.143 105.413H135.96V138.029H169.143V105.413Z" fill="#F75D5D"/>
+                                    <path d="M213.623 63.7282H180.439V96.3439H213.623V63.7282Z" fill="#F75D5D"/>
+                                    <path d="M213.623 105.413H180.439V138.029H213.623V105.413Z" fill="#F75D5D"/>
+                                    <path d="M125.895 147.098H92.7119V179.714H125.895V147.098Z" fill="#F75D5D"/>
+                                    <path d="M169.143 147.098H135.96V179.714H169.143V147.098Z" fill="#F75D5D"/>
+                                    <path d="M256.981 63.7282H223.797V96.3439H256.981V63.7282Z" fill="#F75D5D"/>
+                                    <path d="M256.981 105.413H223.797V138.029H256.981V105.413Z" fill="#F75D5D"/>
+                                </g>
+                                <path d="M131.617 111.394C135.062 111.394 137.855 108.601 137.855 105.156C137.855 101.711 135.062 98.918 131.617 98.918C128.172 98.918 125.379 101.711 125.379 105.156C125.379 108.601 128.172 111.394 131.617 111.394Z"
+                                      fill="#292A2E"/>
+                                <path d="M174.39 111.394C177.836 111.394 180.628 108.601 180.628 105.156C180.628 101.711 177.836 98.918 174.39 98.918C170.945 98.918 168.152 101.711 168.152 105.156C168.152 108.601 170.945 111.394 174.39 111.394Z"
+                                      fill="#292A2E"/>
+                                <path d="M161.365 122.408H144.638C144.528 122.408 144.422 122.365 144.344 122.287C144.266 122.208 144.222 122.103 144.222 121.992C144.222 121.882 144.266 121.776 144.344 121.698C144.422 121.62 144.528 121.576 144.638 121.576H161.365C161.476 121.576 161.582 121.62 161.66 121.698C161.738 121.776 161.782 121.882 161.782 121.992C161.782 122.103 161.738 122.208 161.66 122.287C161.582 122.365 161.476 122.408 161.365 122.408Z"
+                                      fill="#262626"/>
+                                <path d="M125.172 123.001C128.245 123.001 130.737 121.689 130.737 120.072C130.737 118.454 128.245 117.143 125.172 117.143C122.099 117.143 119.607 118.454 119.607 120.072C119.607 121.689 122.099 123.001 125.172 123.001Z"
+                                      fill="white"/>
+                                <path d="M180.817 123.001C183.89 123.001 186.382 121.689 186.382 120.072C186.382 118.454 183.89 117.143 180.817 117.143C177.744 117.143 175.252 118.454 175.252 120.072C175.252 121.689 177.744 123.001 180.817 123.001Z"
+                                      fill="white"/>
+                                <g opacity="0.4">
+                                    <path d="M125.172 123.001C128.245 123.001 130.737 121.689 130.737 120.072C130.737 118.454 128.245 117.143 125.172 117.143C122.099 117.143 119.607 118.454 119.607 120.072C119.607 121.689 122.099 123.001 125.172 123.001Z"
+                                          fill="#367CFF"/>
+                                    <path d="M180.817 123.001C183.89 123.001 186.382 121.689 186.382 120.072C186.382 118.454 183.89 117.143 180.817 117.143C177.744 117.143 175.252 118.454 175.252 120.072C175.252 121.689 177.744 123.001 180.817 123.001Z"
+                                          fill="#367CFF"/>
+                                </g>
+                            </svg>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 offset-3">
+                        <div class="d-grid gap-2 col-6 mx-auto">
+                            <h1 class="text-center h5">Vos classes apparaitront ici. Créez une maintenant</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 offset-3">
+                        <div class="d-grid gap-2 col-6 mx-auto">
+                            <button class="btn btn-block btn-primary btn-lg" type="button">Créer votre première classe
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /.content -->
+        <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+
+    <footer class="main-footer">
+        <div class="float-right d-none d-sm-block">
+            <b>Version</b> 3.2.0
+        </div>
+        <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+    </footer>
+
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+        <!-- Control sidebar content goes here -->
+    </aside>
+    <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+</body>
+
+<!-- jQuery -->
+<script src="{% static 'assets2/plugins/jquery/jquery.min.js' %}"></script>
+<!-- Bootstrap -->
+<script src="{% static 'assets2/plugins/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+<!-- AdminLTE -->
+<script src="{% static 'assets2/dist/js/adminlte.js' %}"></script>
+
+<!-- OPTIONAL SCRIPTS -->
+<script src="{% static 'assets2/plugins/chart.js/Chart.min.js' %}"></script>
+<!-- AdminLTE for demo purposes -->
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="{% static 'assets2/dist/js/pages/dashboard3.js' %}"></script>
+</html>

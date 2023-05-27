@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Falco Call</title>
+    <script src='https://8x8.vc/vpaas-magic-cookie-ac1a00a446694fad8c3431a60a6fadcb/external_api.js' async></script>
+    <style>html, body, #jaas-container { height: 100%; }</style>
+    <script type="text/javascript">
+          window.onload = () => {
+            const api = new JitsiMeetExternalAPI("8x8.vc", {
+              roomName: "class 1 falco",
+              parentNode: document.querySelector('#jaas-container'),
+							// Make sure to include a JWT if you intend to record,
+							// make outbound calls or use any other premium features!
+							// jwt: "eyJraWQiOiJ2cGFhcy1tYWdpYy1jb29raWUtYWMxYTAwYTQ0NjY5NGZhZDhjMzQzMWE2MGE2ZmFkY2IvZDZkYThhLVNBTVBMRV9BUFAiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJqaXRzaSIsImlzcyI6ImNoYXQiLCJpYXQiOjE2ODUyMTI5OTYsImV4cCI6MTY4NTIyMDE5NiwibmJmIjoxNjg1MjEyOTkxLCJzdWIiOiJ2cGFhcy1tYWdpYy1jb29raWUtYWMxYTAwYTQ0NjY5NGZhZDhjMzQzMWE2MGE2ZmFkY2IiLCJjb250ZXh0Ijp7ImZlYXR1cmVzIjp7ImxpdmVzdHJlYW1pbmciOmZhbHNlLCJvdXRib3VuZC1jYWxsIjpmYWxzZSwic2lwLW91dGJvdW5kLWNhbGwiOmZhbHNlLCJ0cmFuc2NyaXB0aW9uIjpmYWxzZSwicmVjb3JkaW5nIjpmYWxzZX0sInVzZXIiOnsiaGlkZGVuLWZyb20tcmVjb3JkZXIiOmZhbHNlLCJtb2RlcmF0b3IiOnRydWUsIm5hbWUiOiJUZXN0IFVzZXIiLCJpZCI6Imdvb2dsZS1vYXV0aDJ8MTA5OTYzNTQwNzM5NzU3MDQ0MTc4IiwiYXZhdGFyIjoiIiwiZW1haWwiOiJ0ZXN0LnVzZXJAY29tcGFueS5jb20ifX0sInJvb20iOiIqIn0.JYFUBA3LlN4INVLmexad1cys_QYMKJjZOPU6L-IbaGN6kydpCtAaNgNOSkRNXX1jxKDiinYWhW5ZTdF43jFinOdblA38Elz4FiFHBZ4eNzhxvSSY6UQ32B6Iwbh7wVyciGUHfjEKLBd8fdxIAX_H_3eki-G-w4pvg8G8SgQ_yNsZjwN5zC89hnuo_MKFv4iCH0Ao0vzISF-sSDo4u6_ZdlBw2Yv6JlvDMkKZWmwXF88B_0NIFkvKIcaJ06b5gnm-9VuLtdDQA0aJmHPGWGm6UPTlUeMx2Q4udJRYO1i8ivshitCQhQDdmmZcA-7Kj2tHOYEoeYGh53oqc-NftHrQzA"
+            });
+          }
+
+    </script>
+</head>
+<body>
+<div id="jaas-container"/>
+</body>
+</html>
+  

@@ -1,0 +1,111 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'assets/images/favicon.png' %}" rel="icon" type="image/png">
+    <title>Sign In - Social Book</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="{% static 'assets/css/styles.min.css' %}">
+
+</head>
+
+<body>
+     <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
+        <div class="container"><button class="navbar-toggler" data-bs-toggle="collapse"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <nav class="navbar navbar-light navbar-expand-md py-3">
+                <div class="container"><a class="navbar-brand d-flex align-items-center" href="/home"><span class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center me-2 bs-icon" data-bss-hover-animate="jello"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-person-video" data-bss-hover-animate="jello">
+                                <path d="M8 9.05a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"></path>
+                                <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2Zm10.798 11c-.453-1.27-1.76-3-4.798-3-3.037 0-4.345 1.73-4.798 3H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-1.202Z"></path>
+                            </svg></span><span data-bss-hover-animate="jello" style="font-weight: bold;">FALCO APP</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-3"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navcol-3">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item"><a class="nav-link active" href="/home" style="margin-left: 81px;color: var(--bs-navbar-active-color);font-weight: bold;" data-bs-target="#">Accueil</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#"><strong><span style="color: var(--bs-navbar-active-color);">FONCTIONNALITES</span></strong></a></li>
+                            <li class="nav-item"><a class="nav-link" href="#" style="color: var(--bs-navbar-active-color);font-weight: bold;">PRIX</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#" style="color: var(--bs-navbar-active-color);font-weight: bold;">EQUIPE</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/faq" style="color: var(--bs-navbar-active-color);font-weight: bold;">FAQ</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/contact-us" style="color: var(--bs-navbar-active-color);font-weight: bold;">CONTACT</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav><a class="btn btn-primary ms-auto" role="button" style="margin-left: -12px;" href="/signin">SE CONNECTER</a>
+        </div>
+    </nav>
+    <main class="page faq-page">
+        <section class="clean-block clean-faq dark">
+            <div class="container">
+                <div class="block-heading">
+                    <h2 class="text-info">FAQ</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p>
+                </div>
+                <div class="block-content">
+                    <div><a class="btn btn-primary" data-bs-toggle="collapse" aria-expanded="true" aria-controls="collapse-1" href="#collapse-1" role="button">Comment les sites web utilisent leur FAQ ?</a>
+                        <div class="collapse show" id="collapse-1">
+                            <p class="text-start" style="padding-top: 10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in,mattis vitae leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                    <div style="padding-top: 20px;padding-bottom: 20px;"><a class="btn btn-primary" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapse-2" href="#collapse-2" role="button">Comment maîtriser les bases d'un support client qualitatif ?</a>
+                        <div class="collapse" id="collapse-2">
+                            <p style="padding-top: 10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in,mattis vitae leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                    <div><a class="btn btn-primary" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapse-3" href="#collapse-3" role="button">Une section FAQ est-elle identique à une base de connaissances ?</a>
+                        <div class="collapse" id="collapse-3">
+                            <p style="padding-top: 10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in,mattis vitae leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="page-footer dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h5>Get started</h5>
+                    <ul>
+                        <li><a href="#">Accueil</a></li>
+                        <li><a href="#">Fonctionnalites</a></li>
+                        <li><a href="#">Prix</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>About us</h5>
+                    <ul>
+                        <li><a href="#">Equipe</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>Support</h5>
+                    <ul>
+                        <li><a href="#">Faq</a></li>
+                        <li><a href="#">Equipe support</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>Legal</h5>
+                    <ul>
+                        <li><a href="#">Termes de Service</a></li>
+                        <li><a href="#">Grpd</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>Falco App © 2023 Copyright Text.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'assets/js/script.min.js' %}"></script>
+
+</body>
+
+</html>
